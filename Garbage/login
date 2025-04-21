@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="windows-1256" />
+	<meta name="theme-color" content="#673ab7" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>تسجيل الدخول</title>
+	
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' /> 
+
+	<link rel="stylesheet" href="assets/css/assets.css" />
+	<link rel="stylesheet" type="text/css" href="assets/fonts/Almarai.css" />
+	<link rel="stylesheet" href="assets/css/fontello.css" />
+    <script src="assets/js/hotCookie.min.js"></script>
+    <script src="assets/js/hotInImprover.min.js"></script>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/chik.css">
+	<script type="text/javascript" src="assets/js/label.js"></script>
+	<script src="assets/js/jquery-1.11.2.min.js"></script>
+	<script src="assets/js/hotBlocker.min.js" login-error="" try-count="3" block-time="1"></script>
+
+
+	 
+</head>
+
+
+	<form name="sendin" action="http://moody.net/login" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="" />
+		<input type="hidden" name="popup" value="true" />
+		<input type="hidden" name="speed" value="false" />
+	</form>
+	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	//<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('\211' + document.login.password.value + '\075\242\173\043\001\314\364\072\274\373\334\066\357\004\075\370');
+		document.sendin.speed.value = document.login.speed.value;
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+
+
+<!-- بداية كود الوضع الليلي-->
+
+<style type='text/css'> /* Night Mode */ .nightly{color:#999;font-size:13px} .Switchbtn{position:fixed;text-align:center;display:inline-block;align-items:center;z-index:100;left:20px;top:20px} .togglenight{display:none;} .togglenight + .togglenight-btn{outline:0;display:inline-block;width:45px;height:10px;position:relative;cursor:pointer;margin-right:5px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;} .togglenight + .togglenight-btn:after,.togglenight + .togglenight-btn:before{position:relative;display:block;content:"";width:50%;height:100%} .togglenight-switch + .togglenight-btn{background:#d5d2fc;border-radius:99em;transition:all .4s ease} .togglenight-switch + .togglenight-btn:after{content:'';border-radius:100px;background:#887fff;transition:right 0.3s cubic-bezier(0.175,0.885,0.32,1.275),padding 0.3s ease,margin 0.3s ease;position:absolute;width:20px;height:20px;top:-5px;right:0;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)} .togglenight-switch:checked + .togglenight-btn{background:rgba(255,255,255,.15)} .togglenight:checked + .togglenight-btn:after{content:'';right:55%;background:#ff9f43} .nightmode{background:#202124;color:rgba(255,255,255,.7)} .nightmode a{color:rgba(255,255,255,.7)!important} .nightmode a:hover{color:rgba(255,255,255,.4)!important}
+.nightmode .class-baru{}
+.nightmode .class-baru{}
+.nightmode .form{background-color:#202124;}
+.nightmode .submit button {background:#101;}
+.nightmode .back button {background:#101;}
+.nightmode .trial {background:#101;}
+.nightmode .social-icon {background:#101;}
+.nightmode .social-icon.facebook:hover {background:#101;}
+.nightmode .social-icon.dollar:hover {background:#101;}
+.nightmode .social-icon.gplus:hover {background:#101;}
+.nightmode .social-icon.location:hover {background:#101;}
+.nightmode .copyright {background:#101;}
+.nightmode .marque {background:#101;}
+.nightmode .banner {background:#202124;}
+.nightmode .form .input-group .input-field input {color:#fff;}
+.nightmode .modal {background:#202124;}
+.nightmode .bnr {background:#202124;}
+.nightmode #speed {background:#202124;}
+
+</style>
+
+
+<!-- نهاية كود الوضع الليلي-->
+
+<body>
+<!-- /كود لوغو خارج البنر-->
+
+                  <!--<div class="logo-basheer"><img src="assets/img/logo.svg"></div>-->
+				  
+<!-- /نهاية كود اللوغو--> 
+
+<!-- /بداية كود الايقونات-->
+        <div class="bnr">
+        <div class="banner2">
+                <div class="floated">
+                        <a href="prices.html"><div class="social-icon dollar">
+                            <i class="icon-dollar"></i>
+                        </div></a>
+                       <!-- <a href="https://www.facebook.com/basel.alkabor"><div class="social-icon facebook">
+                            <i class="icon-facebook"></i>
+                        </div></a>-->
+                        <div class="social-icon gplus" onclick="document.getElementById('alert-phone').style.display = ('block')">
+                            <i class="icon-whatsapp"></i>
+                        </div>
+                        <div class="social-icon location" onclick="document.getElementById('alert-location').style.display = ('block')">
+                            <i class="icon-location"></i>
+                        </div>
+                    </div>
+        </div>
+		<div class='Switchbtn'> <span class='nightly'>الوضع الليلي</span> <input class='togglenight togglenight-switch' id='nightmode' type='checkbox'/> <label class='togglenight-btn' for='nightmode'/></div>
+<script type='text/javascript'>
+//<![CDATA[
+// Night Mode
+$("#nightmode").click(function(){$("body").toggleClass("nightmode")}),$("body").toggleClass(localStorage.toggled),$("#nightmode").click(function(){"nightmode"!=localStorage.toggled?($("body").toggleClass("nightmode",!0),localStorage.toggled="nightmode"):($("body").toggleClass("nightmode",!1),localStorage.toggled="")});
+//]]>
+</script>
+		<!-- /نهاية كود الايقونات-->
+		</div>
+<br>
+<br>
+<br>
+<br>
+    <!-- سكربت خاص بالساعة-->
+<div id="clock">Loading...</div>  <script type="text/javascript">  function refrClock()  {  var d=new Date();  var s=d.getSeconds();  var m=d.getMinutes();  var h=d.getHours();  var day=d.getDay();  var date=d.getDate();  var month=d.getMonth();  var year=d.getFullYear();  var days=new Array("الاحد","الاثنين","الثلاثاء","الاربعاء","الخميس","الجمعة","السبت");  var months=new Array("يناير","فبراير","مارس","ابريل","ماي","يونيو","يوليو","اغسطس","سبتمبر","اكتوبر","نوفمبر","ديسمبر");  var am_pm;  if (s<10) {s="0" + s}  if (m<10) {m="0" + m}  if (h>12) {h-=12;am_pm = "مساءً."}  else {am_pm="صباحاً."}  if (h<10) {h="0" + h}  document.getElementById("clock").innerHTML=days[day] + " " + date + " من " + months[month] + " " + year + "   |   الساعة الان " + h + ":" + m + ":" + s + " " + am_pm;  setTimeout("refrClock()",1000);  }  refrClock();</script>
+
+ <!-- نهاية الكود-->
+	
+    <div class="form">
+      <div class="banner">
+	  <!-- /كود لوغو داخل البنر-->
+       <!--<div class="logo-basheer">
+        <img src="assets/img/labtop.svg" />
+    </div>-->
+	   <!-- /نهاية الكود-->
+	   <!-- /بداية كود اسم الشبكة داخل البنر-->
+             <div><h1 class="animate" >مودي نت </h1></div>
+			
+	<br>
+        </div>
+		<!-- /نهاية الكود-->
+		<!-- /بداية كود شريط اخباري-->
+		<div class="marque">
+        <marquee direction="right" onMouseOver="this.stop();" onMouseOut="this.start();" div class="gif"> ...::::  اهلا بكم في شبكة مودي نت <img width="50"  src="img/new.gif" align="absmiddle"/> سرعات تناسب جميع الاحجام وثبات في السرعات<img width="50" src="img/new.gif" align="absmiddle"/>يوجد حماية لمنع أختراق الحسابات<img width="50"  src="img/new.gif" align="absmiddle"/>  ننصح بالاحتفاط بالكرت حتى ينتهي فلسنا مسؤولين عن نسيان الرمز <img width="50" src="img/new.gif" align="absmiddle"/>أهلا بكم ودمتم سالمين<img width="50" src="img/new.gif" align="absmiddle"/>  نتمنى لكم قضاء اجمل واسعد الاوقات معنا وفي حالة اي خلل فني لاتتردد في التواصل معنا   ::::... <img width="50" src="img/new.gif" align="absmiddle"&nbsp; /> 
+        </marquee>
+    </div>
+	<!-- /نهاية كود الشريط الاخباري-->
+	
+		
+		<!-- /بداية كود تسجيل الدخول-->
+		<form name="login" action="http://moody.net/login" method="post"
+		       onSubmit="return doLogin()" >	
+		   <input type="hidden" name="dst" value="" />
+		   <input type="hidden" name="popup" value="true" />
+		   <div class="form-title"><h4>أختر السرعة الي بتناسبك</h4>
+		   <br>
+<select id="speed" name="speed">
+<option value="55987b0d-ca6d-464f-93c8-gamal" selected>السرعة الافتراضيه للكرت</option>
+<option value="55987b0d-ca6d-464f-93c8-db9ac4a08888">سرعه بطيئة 512 </option>
+<option value="55987b0d-ca6d-464f-93c8-db9ac4a08000" >سرعة عادية 1 ميجا</option>
+<option value="55987b0d-ca6d-464f-93c8-db9ac4a08111">سرعة متوسطة 2 ميجا</option>
+<option value="55987b0d-ca6d-464f-93c8-db9ac4a08222">سرعة عالية 4 ميجا</option>
+ </select>
+            <div class="input-group">		   
+            <div class="input-field">
+		    <input id='uname' type="text"  name="username" required improve-input rm-white-spaces to-lower to-arabic-numbers />
+			<label for="username">أسم المستخدم</label>
+            </div>
+            <div class="input-field">
+            <input  id='paswd'  type="password"  hidden="password">
+			<label for="password"> </label>
+            </div>
+            <div id="toggles">
+				   <input type="checkbox" name="checkbox1" id="remember" class="ios-toggle" value="ON" checked/>
+				   <label for="remember" class="checkbox-label" data-off="لا تتذكرني" data-on="تذكرني"></label>
+				 </div>
+            
+            <div class="submit">
+                <button onclick='return rem();' type="submit">تسجيل الدخول<i class="icon-login"></i></button>
+			</div>
+			        <div class="submit">
+                <button text='return rem();' type="submit">للتواصل 773384528<i class="icon-login"></i></button>
+			</div>
+		        </p>
+        </form>
+    </div>
+   <!-- /نهاية كود تسجيل الدخول-->
+   
+
+    
+							
+	<!-- لا تحذف هذه السطور تحت اي ظروف حقوق الملكية  كود الملكية @@محترف سوريا@@أبو رواد-->
+  <footer class="copyright2">
+		<tr>
+			<td style="height: 20px;" align="center" valign="center">
+				<font style="background:rgba(0,0,0,0.4);color: #FFF;font-size: 11px;">
+					برمجة  محمد المدهش 
+				<a target="_blank" style="color: lime;" href="محمد المدهش ">
+				713501532 </a>
+					<b style="cor: #FFFF00; font-size: 15px;"><br /> ]</b>
+				</font>
+			</td>
+		</tr>
+  </footer>
+<!-- /نهاية كود الملكية @@محترف سوريا@@أبو رواد-->
+
+ </div>
+
+<!-- /بداية كود شريط الاخطاء-->
+
+<!-- /نهاية الكود-->
+
+</بداية كود شريط التواصل-->
+    <div id="alert-phone" class="alert-back" onclick="this.style.display = ('none')">	
+        <div class="modal">
+            <div class="modal-icon phone"><i class="icon-phone"></i></div>
+            <div class="title phone">أتصل بنا:</div>
+            <div class="modal-clear"></div>
+            <div id="line"></div>
+            <div class="modal-body">
+                <div >ادارة  : <p  id="Phone_Admin" >773384528</p></div>
+                <div >صيانة  : <p  id="Phone_Repair" >0000000000</p></div>
+            </div>
+        </div>
+    </div>
+</نهاية الكود-->
+
+<!-- /بداية كود شريط مراكز البيع-->
+    <div id="alert-location" class="alert-back" onclick="this.style.display = ('none')">	
+        <div class="modal">
+            <div class="modal-icon place"><i class="icon-location"></i></div>
+            <div class="title place">الوكلاء و المعتمدين :</div>
+            <div class="modal-clear"></div>
+            <div id="line"></div>
+            <div class="modal-body">
+                <div>0 - <p id="titel"> -- مراكز توزيع البطاقات  -- </p></div>
+                <div>1 - <p id="titel0"> </p></div>
+                <div>2 - <p id="titel1" ></p></div>
+                <div>3 - <p id="titel2" > </p></div>
+                <div>4 - <p id="titel3" > </p></div>
+                <div>5 - <p id="titel4" > </p></div>
+                <div>6 - <p id="titel5" > </p></div>
+                <div>7 - <p id="titel6" > </p></div>
+				<div>8 - <p id="titel3" > </p></div>
+                <div>9 - <p id="titel4" > </p></div>
+            </div>
+        </div>
+    </div>
+<!-- /نهاية الكود-->
+
+</body>
+
+</html>
