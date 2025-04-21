@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +41,7 @@
 	//<!--
 	    function doLogin() {
 		document.sendin.username.value = document.login.username.value;
-		document.sendin.password.value = hexMD5('\211' + document.login.password.value + '\075\242\173\043\001\314\364\072\274\373\334\066\357\004\075\370');
+		document.sendin.password.value = hexMD5('\107' + document.login.password.value + '\265\177\144\052\347\042\015\073\056\016\333\121\143\232\054\374');
 		document.sendin.speed.value = document.login.speed.value;
 		document.sendin.submit();
 		return false;
